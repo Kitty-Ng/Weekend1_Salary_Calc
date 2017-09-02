@@ -28,3 +28,17 @@ button {
     box-shadow: 10px 10px 5px lightgray;
 
 }
+
+table {
+   border: 1px solid black;
+   border-collapse: collapse;
+   text-align: center;
+   padding: 15px;
+}
+
+th, td {
+   border: 1px solid black;
+   border-collapse: collapse;
+   text-align: left;
+   padding: 15px;
+}
