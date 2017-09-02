@@ -1,0 +1,30 @@
+html{
+    font: 20px Copperplate;
+}
+
+header{
+    background-color: lightsteelblue;
+}
+
+input {
+    font-size: 15px;
+    padding: 10px 10px;
+    text-align: center;
+    border: 1px solid lightgray;
+    border-spacing: 2px;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+button {
+    background-color: gray;
+    font-size: 15px;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    border: 1px solid gray;
+    margin-top: 2%;
+    margin-left: 1%;
+    box-shadow: 10px 10px 5px lightgray;
+
+}
