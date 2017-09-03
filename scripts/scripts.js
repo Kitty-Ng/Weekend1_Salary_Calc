@@ -12,14 +12,16 @@ function readyNow() {
 
 function addEmployee() {
     // use input to create new Employee object
-    //push new Employee object into global employeesArray
-    employeesArray.push(new Employee(
+    // push new Employee object into global employeesArray
+    var newEmployee = new Employee(
         $('#firstNameIn').val(),
         $('#lastNameIn').val(),
         $('#idNumberIn').val(),
         $('#jobTitleIn').val(),
         $('#annualSalaryIn').val()
-    ));
+    );
+
+    employeesArray.push(newEmployee);
 
     // reset inputs
         $('#firstNameIn').val('');
@@ -27,6 +29,10 @@ function addEmployee() {
         $('#idNumberIn').val('');
         $('#jobTitleIn').val('');
         $('#annualSalaryIn').val('');
+
+    // once newEmployee is created, append the data to employeeTable
+        $('#employeeTable').append('<tr><td>' + newEmployee.firstName + '</td><td>' + newEmployee.lastName + '</td><td>' + newEmployee.idNumber + '</td><td>' + newEmployee.jobTitle + '</td><td>' + newEmployee.annualSalary + '</td><td>' + newEmployee.monthlySalary + '</td></tr>');
+
 };
 
 function Employee(firstNameIn, lastNameIn, idNumberIn, jobTitleIn, annualSalaryIn){
@@ -39,4 +45,4 @@ function Employee(firstNameIn, lastNameIn, idNumberIn, jobTitleIn, annualSalaryI
 
      //calculate monthly salary and add into new Employee Object
     this.monthlySalary = Math.ceil((annualSalaryIn / 12) * 100) / 100;
-}; 
+};

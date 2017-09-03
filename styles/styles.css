@@ -2,7 +2,7 @@ html{
     font: 20px Copperplate;
 }
 
-header{
+header {
     background-color: lightsteelblue;
 }
 
@@ -36,9 +36,13 @@ table {
    padding: 15px;
 }
 
-th, td {
+td {
    border: 1px solid black;
    border-collapse: collapse;
    text-align: left;
    padding: 15px;
+}
+
+#monthlyCost {
+    background-color: lightsteelblue;
 }
