@@ -1,48 +1,71 @@
 html{
     font: 20px Copperplate;
+    color: #f2f2f2;
+    background-color: #0F1626;
 }
 
 header {
-    background-color: lightsteelblue;
+    background-color: #AB987A;
+    padding-left: 1%;
+}
+
+h2 {
+    margin-bottom: 5px;
+    padding-left: 1%;
 }
 
 input {
     font-size: 15px;
     padding: 10px 10px;
     text-align: center;
-    border: 1px solid lightgray;
+    border: 1px solid #0F1626;
     border-spacing: 2px;
     margin-top: 1%;
     margin-left: 1%;
 }
 
 button {
-    background-color: gray;
+    background-color: #FF533D;
     font-size: 15px;
-    color: white;
+    color: #f2f2f2;
     padding: 10px 10px;
     text-align: center;
-    border: 1px solid gray;
+    border: 1px solid #FF533D;
     margin-top: 2%;
     margin-left: 1%;
-    box-shadow: 10px 10px 5px lightgray;
-
 }
 
 table {
-   border: 1px solid black;
+   border: 1px solid #0F1626;
    border-collapse: collapse;
    text-align: center;
    padding: 15px;
 }
 
-td {
-   border: 1px solid black;
-   border-collapse: collapse;
-   text-align: left;
-   padding: 15px;
+th {
+    background-color: #AB987A;
+    border: 1px solid #0F1626;
+    border-collapse: collapse;
+    padding: 15px;
+}
+
+tr {
+    border-collapse: collapse;
+    text-align: left;
+    padding: 15px;
+}
+
+tr:nth-child(odd) {
+    background-color: #AB987A;
+    border-collapse: collapse;
+    text-align: left;
+    padding: 15px;
+}
+
+td{
+    border: 1px solid #0F1626; 
 }
 
 #monthlyCost {
-    background-color: lightsteelblue;
+    background-color: #FF533D;
 }

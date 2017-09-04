@@ -8,8 +8,6 @@ function readyNow() {
     $('#addNewEmployeeButton').on('click', addEmployee);
 };
 
-// ---------
-
 function addEmployee() {
     // use input to create new Employee object
     // push new Employee object into global employeesArray
@@ -36,7 +34,6 @@ function addEmployee() {
     // recalculate the monthlyCost across the global employeesArray
         // loop through global employeesArray and grab the monthlySalary -> then push into monthlyCost
         //loop through monthlyCost and sum all values to become totalMonthlyCost
-
     function calTotalMonthlyCost(){
         var totalMonthlyCost = 0;
         for (i = 0; i < employeesArray.length; i++){

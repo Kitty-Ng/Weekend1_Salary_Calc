@@ -14,38 +14,32 @@
         <h1>Salary Calculator</h1>
     </header>
     <main>
-        <h2><u>Add New Employee Details:</u></h2>
-            <section id="addFirstName">
-                    <input type= "text" placeholder= "First Name" id= "firstNameIn">
-            </section>
-            <section id= "addLastName">
-                    <input type= "text" placeholder= "Last Name" id= "lastNameIn">
-            </section>
-            <section id= "addIdNumber">
-                    <input type= "number" placeholder= "ID Number" id= "idNumberIn">
-            </section>
-            <section id= "addJobTitle">
-                    <input type= "text" placeholder= "Job Title" id= "jobTitleIn">
-            </section>
-            <section id= "addAnnualSalary">
-                    <input type= "number" placeholder= "Annual Salary" id= "annualSalaryIn">
-            </section>
+        <section id= "addNew">
+            <h2><u>Add New Employee Details:</u></h2>
+                <input type= "text" placeholder= "First Name" id= "firstNameIn">
+                <input type= "text" placeholder= "Last Name" id= "lastNameIn">
+                <input type= "number" placeholder= "ID Number" id= "idNumberIn">
+                <input type= "text" placeholder= "Job Title" id= "jobTitleIn">
+                <input type= "number" placeholder= "Annual Salary" id= "annualSalaryIn">
         
         <button id= "addNewEmployeeButton">Submit</button>
-        
-        <h2><u>All Employees in Company</u></h2>
-            <table id= "employeeTable">
-                <tr id= "employeeList">
-                    <td>First Name</th>
-                    <td>Last Name</th>
-                    <td>Employee ID Number</th>
-                    <td>Job Title</th>
-                    <td>Annual Salary</th>
-                    <td>Monthly Salary</th>
-                </tr>
-            </table>
-        
-        <h2 id="monthlyCost">Total Monthly Costs:</h2>
+        </section>
+
+        <section id= "viewAll">
+            <h2><u>All Employees in Company:</u></h2>
+                <table id= "employeeTable">
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Employee ID Number</th>
+                        <th>Job Title</th>
+                        <th>Annual Salary</th>
+                        <th>Monthly Salary</th>
+                    </tr>
+                </table>
+            
+            <h2 id="monthlyCost"></h2>
+        </section>
     </main>
     <footer>
         <h5>Last updated: Sept 1, 2017</h5>
